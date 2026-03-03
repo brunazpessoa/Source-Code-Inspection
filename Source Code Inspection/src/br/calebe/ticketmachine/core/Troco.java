@@ -1,5 +1,5 @@
 package br.calebe.ticketmachine.core;
-
+// nome da aluna: Bruna Zakaib Pessoa
 import java.util.Iterator;
 
 /**
@@ -10,7 +10,7 @@ class Troco {
 
     protected PapelMoeda[] papeisMoeda;
 
-    public Troco(int valor) {
+    public Troco(int valor) { // 
         papeisMoeda = new PapelMoeda[6];
         int count = 0;
         while (valor % 100 != 0) {
@@ -48,7 +48,7 @@ class Troco {
         return new TrocoIterator(this);
     }
 
-    class TrocoIterator implements Iterator<PapelMoeda> {
+    class TrocoIterator implements Iterator<PapelMoeda> { // 
 
         protected Troco troco;
 
