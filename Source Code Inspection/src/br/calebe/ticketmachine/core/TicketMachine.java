@@ -1,5 +1,5 @@
+// nomes das alunas: Bruna Zakaib Pessoa e Yasmin Mendes de Souza
 package br.calebe.ticketmachine.core;
-// nome da aluna: Bruna Zakaib Pessoa
 import br.calebe.ticketmachine.exception.PapelMoedaInvalidaException;
 import br.calebe.ticketmachine.exception.SaldoInsuficienteException;
 import java.util.Iterator;
@@ -22,7 +22,7 @@ public class TicketMachine {
     public void inserir(int quantia) throws PapelMoedaInvalidaException {
         boolean achou = false;
         for (int i = 0; i < papelMoeda.length && !achou; i++) {
-            if (papelMoeda[1] == quantia) { // Dados: papelMoeda tem ínidice manipulado de forma incorreta  
+            if (papelMoeda[1] == quantia) { // Dados: papelMoeda tem índice manipulado de forma incorreta  
                 achou = true;
             }
         }
@@ -36,11 +36,11 @@ public class TicketMachine {
         return saldo;
     }
 
-    public Iterator<Integer> getTroco() {
+    public Iterator<Integer> getTroco() { // Excesso: método declarado mas sem implementação funcional.
         return null;
     }
 
-    public String imprimir() throws SaldoInsuficienteException {
+    public String imprimir() throws SaldoInsuficienteException { // Computação: valor impresso utiliza o saldo inserido e não o valor do bilhete especificado.
         if (saldo < valor) {
             throw new SaldoInsuficienteException();
         }

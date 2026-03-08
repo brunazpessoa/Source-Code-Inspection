@@ -1,5 +1,5 @@
-package br.calebe.ticketmachine.core;
 // nome da aluna: Bruna Zakaib Pessoa
+package br.calebe.ticketmachine.core;
 /**
  *
  * @author Calebe de Paula Bianchini
